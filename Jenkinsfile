@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/AnhQuy6/QuyHTA_Demo.git'
+                git branch: 'DEV', url: 'https://github.com/AnhQuy6/QuyHTA_Demo.git'
             }
         }
         stage('Build') {
